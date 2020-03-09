@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+}
+
+body {
+    background-color: #ccc;
+    text-align: center;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 30px;
+    /* text-shadow: 5px 5px 5px black; */
+    font-style: oblique;
+    color: darkslategray;
+
+}
+
+.container {
+    width: 600px;
+    margin: 10px auto;
+    border: 5px solid white;
+    overflow: auto;
+}
+
+.thumbnail {}
+
+.thumb {
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}
